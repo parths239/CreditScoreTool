@@ -1,6 +1,3 @@
-Here's a draft for your GitHub README file for the **Credit Score Tool** project:
-
----
 
 # Credit Score Tool
 
