@@ -11,12 +11,12 @@ public class GatewaySecurityConfig {
     @Bean
     public SecurityWebFilterChain springSecurityFilterChain(ServerHttpSecurity http) {
         http
-            .authorizeExchange()
-            .pathMatchers("/users/**").authenticated()
-            .pathMatchers("/credit/**").authenticated()
-            .anyExchange().permitAll()
-            .and().csrf().disable()
-            .oauth2Login(); // Example for OAuth2
+                .authorizeExchange()
+                .pathMatchers("/users/**").authenticated()
+                .pathMatchers("/credit/**").authenticated()
+                .anyExchange().permitAll()
+                .and().csrf().disable()
+                .oauth2Login(); // Example for OAuth2
         return http.build();
     }
 }
